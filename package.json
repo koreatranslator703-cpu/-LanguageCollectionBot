@@ -1,0 +1,27 @@
+{
+  "name": "language-collection-bot",
+  "version": "1.0.0",
+  "description": "Telegram bot for AI language data collection - @LanguageCollectionBot",
+  "main": "src/bot.js",
+  "scripts": {
+    "start": "node src/bot.js",
+    "postinstall": "prisma generate",
+    "migrate": "prisma migrate deploy",
+    "migrate:dev": "prisma migrate dev --name init",
+    "studio": "prisma studio"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.18.0",
+    "dotenv": "^16.4.5",
+    "exceljs": "^4.4.0",
+    "express": "^4.19.2",
+    "json2csv": "^6.0.0-alpha.2",
+    "telegraf": "^4.16.3"
+  },
+  "devDependencies": {
+    "prisma": "^5.18.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
