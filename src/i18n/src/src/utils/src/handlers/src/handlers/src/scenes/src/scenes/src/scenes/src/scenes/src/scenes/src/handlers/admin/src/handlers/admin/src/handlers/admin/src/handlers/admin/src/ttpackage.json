@@ -1,0 +1,6 @@
+your-repo/
+├── package.json
+├── prisma/
+├── src/
+│   └── bot.js
+└── README.md
